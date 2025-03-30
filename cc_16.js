@@ -36,6 +36,7 @@ async function fetchProductsAsync() {
 function displayProducts(products) {
     const productContainer = document.getElementById('product-container');
     productContainer.innerHTML = ''; // clears existing content 
+    for (let i = 0; i < 5; i++) { // loops the first 5 products 
     products.forEach(product => {
         // create div element for product 
         const productElement = document.createElement('div');
@@ -62,4 +63,5 @@ function displayProducts(products) {
 // logs error to console 
 function handleError(error) {
     console.error('There was a problem with the fetch operation:', error);
+    }
 }

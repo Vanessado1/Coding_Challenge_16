@@ -65,3 +65,15 @@ function handleError(error) {
     console.error('There was a problem with the fetch operation:', error);
     }
 }
+// task 5
+// create a resuable error handler 
+// logs errors to console 
+function handleError(error) {
+    console.error('An error occurred:', error.message);
+}
+
+// task 6 
+// calling functions 
+fetchProductsThen();
+fetchProductsAsync();
+
